@@ -1,3 +1,0 @@
-Vytvořte třídu Obdelnik, která má atributy delka a sirka. V konstruktoru nastavte tyto atributy podle parametrů. 
-Vytvořte metody getDelka, getSirka, které vrátí hodnoty příslušných atributů. Vytvořte také metody obvod a obsah, 
-které vrátí obvod nebo obsah obdélníku podle vzorců obvod = 2 * (delka + sirka) a obsah = delka * sirka

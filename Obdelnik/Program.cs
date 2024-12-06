@@ -1,40 +1,24 @@
-namespace MyApp{
+namespace FirstApp
+{
 
     class Program
     {
         static void Main(string[] args)
-  {
-    Car Ford = new Car();  // Create an object of the Car Class (this will call the constructor)
+        {
+            
+            Kniha kniha1 = new Kniha("škola", "Božena Němcová", 1945);
+            Ebook ebook1 = new Ebook("Válka", "Neznámý", 2012, 7.4, "Word");
 
-    Car Skoda = new Car("Karoq", "nafta");
+           
+            Knihovna.PridatKnihu(kniha1);
+            Knihovna.PridatKnihu(ebook1);
 
-    Console.WriteLine(Ford.model);  // Print the value of model
-     Console.WriteLine(Skoda.model + " " + Skoda.palivo);
+           
+            Knihovna.VypisVsechnyKnihy();
+
+             
+            Console.WriteLine($"Počet knih v knihovně: {Knihovna.PocetKnih}");
+        }
     }
-    }
-    
-    class Car
-{
-  public string model;  // Create a field
-  public string palivo;
-
-  // Create a class constructor for the Car class
-  public Car()
-  {
-    model = "Mustang"; // Set the initial value for model
-  }
-
-  public Car(string model_par)
-  {
-    this.model = model_par; // Set the initial value for model
-  }
-    public Car(string model, string palivo)
-  {
-    this.model = model; // Set the initial value for model
-    this.palivo = palivo;
-  }
-  
-}
 
 }
-
